@@ -189,3 +189,11 @@ footer p{margin-top:8px}
   section{padding:64px 0}
   .contact-map iframe{height:300px}
 }
+
+/* ---- Lapin intro: rabbit runs, jumps at you, page opens ---- */
+.lapin-intro{position:fixed;inset:0;background:#153E21;z-index:9999;display:flex;align-items:center;justify-content:center;transition:opacity .45s ease,visibility .45s}
+.lapin-intro.done{opacity:0;visibility:hidden}
+.lapin-anim{width:min(300px,58vw);height:auto;overflow:visible;animation:lapin-run 1.05s ease-in-out 2,lapin-jump .65s cubic-bezier(.3,.6,.4,1) 2.1s forwards}
+@keyframes lapin-run{0%,100%{transform:translate(-70px,0)}25%{transform:translate(-35px,-18px)}50%{transform:translate(0,0)}75%{transform:translate(35px,-18px)}}
+@keyframes lapin-jump{0%{transform:translate(70px,0) scale(1);opacity:1}55%{transform:translate(70px,-34px) scale(1.7);opacity:1}100%{transform:translate(70px,26px) scale(3.4);opacity:0}}
+@media (prefers-reduced-motion:reduce){.lapin-intro{display:none}.lapin-anim{animation:none}}
