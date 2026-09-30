@@ -133,3 +133,6 @@ menuBtn.addEventListener("click", () => mainNav.classList.toggle("open"));
 mainNav.querySelectorAll("a").forEach(a => a.addEventListener("click", () => mainNav.classList.remove("open")));
 
 applyLang(lang);
+
+/* Lapin intro: reveal page after the rabbit jumps */
+(function(){var el=document.getElementById('lapinIntro');if(!el)return;if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches){el.remove();return;}setTimeout(function(){el.classList.add('done');setTimeout(function(){el.remove();},550);},2900);})();
