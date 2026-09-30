@@ -1,14 +1,14 @@
 :root{
-  --ink:#251a12;
-  --ink-soft:#4c3a2b;
-  --muted:#7d6a55;
-  --cream:#faf6ee;
-  --paper:#fffdf8;
-  --line:#e9ddc9;
-  --amber:#c0902f;
-  --amber-dark:#8a6520;
-  --dark:#1f130d;
-  --dark-soft:#2e1e14;
+  --ink:#3d2b1a;
+  --ink-soft:#5a4430;
+  --muted:#8d765e;
+  --cream:#f8f1e3;
+  --paper:#ffffff;
+  --line:#e7dac2;
+  --amber:#8a6a35;
+  --amber-dark:#6b4f24;
+  --dark:#2c1f12;
+  --dark-soft:#3a2a18;
   --radius:14px;
   --font-head:'Barlow Condensed', 'Arial Narrow', sans-serif;
   --font-body:'Barlow', 'Helvetica Neue', Arial, sans-serif;
